@@ -1,0 +1,63 @@
+=======================================================
+  HEART DISEASE ANALYSIS REPORT
+=======================================================
+
+Total Patients : 303
+Total Columns  : 17
+
+AGE GROUP DISTRIBUTION
+------------------------------
+  young   : 15 patients (5.0%)
+  middle  : 209 patients (69.0%)
+  senior  : 79 patients (26.1%)
+
+DISEASE RATES
+------------------------------
+  young   : 26.67%
+  middle  : 43.54%
+  senior  : 55.7%
+
+AVERAGE STATS PER GROUP
+------------------------------
+  YOUNG
+    Avg RiskScore : 135.75
+    Avg Chol      : 218.73
+    Avg Heart Rate: 171.67
+  MIDDLE
+    Avg RiskScore : 152.0
+    Avg Chol      : 243.61
+    Avg Heart Rate: 151.97
+  SENIOR
+    Avg RiskScore : 164.74
+    Avg Chol      : 260.15
+    Avg Heart Rate: 139.18
+
+OVERALL STATS (pandas)
+------------------------------
+          age    chol  trestbps  thalach  RiskScore
+count  303.00  303.00    303.00   303.00     303.00
+mean    54.44  246.69    131.69   149.61     154.52
+std      9.04   51.78     17.60    22.88      22.90
+min     29.00  126.00     94.00    71.00     102.00
+25%     48.00  211.00    120.00   133.50     139.05
+50%     56.00  241.00    130.00   153.00     152.10
+75%     61.00  275.00    140.00   166.00     167.65
+max     77.00  564.00    200.00   202.00     280.20
+
+GROUPED BY CONDITION
+------------------------------
+          age    chol  trestbps  thalach  RiskScore
+target                                             
+0       52.59  242.64    129.25   158.38     151.61
+1       56.63  251.47    134.57   139.26     157.95
+
+KEY OBSERVATIONS
+------------------------------
+  - Seniors show the highest average RiskScore.
+  - High cholesterol correlates with heart disease.
+  - Disease prevalence increases with age group.
+
+CONCLUSION
+------------------------------
+  Risk increases with age, cholesterol, and blood pressure.
+=======================================================
